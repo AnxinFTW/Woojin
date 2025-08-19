@@ -3,11 +3,184 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css">
-  <script src="js/index.js"></script>
-  <title>woojin.html</title>
+  <title>Vote Kang Woojin</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(-45deg, #F0F3FA, #D5DEEF, #8AAEE0, #395886);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      color: #395886;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #395886;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      animation: fadeIn 1.2s ease;
+    }
+    .hero-title {
+      text-align: center;
+      font-size: 60px;
+      font-weight: 900;
+      margin: 50px 20px;
+      color: #395886;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+      animation: fadeInDown 1.5s ease;
+    }
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px;
+      gap: 40px;
+      flex-wrap: wrap;
+      animation: fadeInUp 1.8s ease;
+    }
+    .featured {
+      flex: 1 1 400px;
+      background-color: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .featured img, .featured video {
+      width: 100%;
+      display: block;
+    }
+    .featured:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+    .description {
+      flex: 1 1 300px;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #638ECB;
+      animation: fadeInRight 2s ease;
+    }
+    .description h2 {
+      margin-top: 0;
+      color: #395886;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #395886;
+      color: white;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s ease;
+      animation: bounceIn 1.5s ease;
+    }
+    .button:hover {
+      background-color: #628ECB;
+      transform: translateY(-3px) scale(1.05);
+    }
+
+    /* Background Gradient Animation */
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInRight {
+      from {opacity: 0; transform: translateX(40px);}
+      to {opacity: 1; transform: translateX(0);}
+    }
+    @keyframes bounceIn {
+      0% {opacity: 0; transform: scale(0.3);}
+      50% {opacity: 1; transform: scale(1.05);}
+      70% {transform: scale(0.9);}
+      100% {transform: scale(1);}
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 40px;
+        margin: 30px 15px;
+      }
+      .content {
+        padding: 20px;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+      }
+      .description {
+        font-size: 16px;
+        text-align: center;
+      }
+      .description h2 {
+        font-size: 22px;
+      }
+      .button {
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        font-size: 16px;
+        padding: 15px;
+      }
+      .hero-title {
+        font-size: 32px;
+      }
+      .description {
+        font-size: 14px;
+      }
+      .button {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+    }
+  </style>
 </head>
 <body>
-	<h1>woojin.html</h1>
+  <header>
+    Kang Woojin
+  </header>
+
+  <div class="hero-title">VOTE KANG WOOJIN</div>
+
+  <div class="content">
+    <div class="featured">
+      <!-- Ganti dengan gambar/video asli -->
+      <div style="max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); text-align: center;">
+    <img src="kangwoojin.jpg" alt="Vote Kang Woojin" width="100%" style="border-radius: 15px; margin-bottom: 15px;">
+    </div>
+    <div class="description">
+      <h2>Vote For Him/h2>
+      <p>
+        Support Kang Woojin by opening Mnet+, and vote for him!!!  
+        NOW. He's Hirono twin alike, so, if you like Hirono you should also love Woojin! ^______
+      </p>
+      <a href="#" class="button">Made By LIONA</a>
+    </div>
+  </div>
+
 </body>
 </html>
